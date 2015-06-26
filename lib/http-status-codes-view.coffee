@@ -9,7 +9,8 @@ class HttpStatusCodesView extends SelectListView
 
   initialize: (serializeState) ->
     super
-    @addClass('overlay from-top http-status-codes-view')
+    @panel = atom.workspace.addModalPanel(item: this, visible: false)
+    @addClass('http-status-codes-view')
 
   viewForItem: (item) ->
     "<li><strong>#{item.code}</strong> #{item.message}</li>"
@@ -24,12 +25,8 @@ class HttpStatusCodesView extends SelectListView
 
   show: ->
     @populate()
-    workspaceElement = atom.views.getView(atom.workspace)
-    $(workspaceElement).append(@element)
+    @panel.show()
     @focusFilterEditor()
 
   cancel: ->
-    $(@element).remove();
-
-
-# class MySelectListView extends SelectListView
+    @panel.hide()
