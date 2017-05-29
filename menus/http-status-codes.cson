@@ -7,8 +7,8 @@
   'label': 'Packages'
   'submenu': [{
     'label': 'Http Status Codes'
-    'submenu': [
+    'submenu': [{
       { 'label': 'Show', 'command': 'http-status-codes:show' }
     }]
-  ]
+  }]
 }]
