@@ -1,7 +1,7 @@
 {
   "name": "http-status-codes",
   "main": "./lib/main",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "This package shows a list of HTTP status codes.",
   "repository": "https://github.com/josa42/atom-http-status-codes",
   "license": "MIT",
