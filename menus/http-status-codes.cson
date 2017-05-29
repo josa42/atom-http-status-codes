@@ -3,14 +3,12 @@
 #   '.overlayer':
 #       'Show Http Status Codes': 'http-status-codes:show'
 
-'menu': [
-  {
-    'label': 'Packages'
+'menu': [{
+  'label': 'Packages'
+  'submenu': [{
+    'label': 'Http Status Codes'
     'submenu': [
-      'label': 'Http Status Codes'
-      'submenu': [
-        { 'label': 'Show', 'command': 'http-status-codes:show' }
-      ]
-    ]
-  }
-]
+      { 'label': 'Show', 'command': 'http-status-codes:show' }
+    }]
+  ]
+}]
